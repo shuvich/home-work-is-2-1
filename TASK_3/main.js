@@ -9,20 +9,57 @@
 // let kab = college[1][1]; //выведет кабинет 111. 1 массив 1 элемент (начало с нуля)
 // console.log(college);
 
-let number = [ 1, 2, 3, 4, 5, 6, 7 ];
-console.log(number);
+// let number = [ 1, 2, 3, 4, 5, 6, 7 ];
+// console.log(number);
 
-const countLength = 5;
+// const countLength = 5;
 
-if (number.length === countLength) {
-    console.log("ok");
+// if (number.length === countLength) {
+//     console.log("ok");
+// }
+// else if (number.length < countLength) {
+//     let result = countLength - number.length;
+//     console.log(`Длина вашего массива: ${number.length}. Длину нужно увеличить до ${countLength}. Не хватает еще ${result} элементов`);
+// }
+// else if (number.length > countLength) {
+//     result = number.length - countLength;
+//     console.log(`Длина вашего массива: ${number.length}. Длину нужно уменьшить до ${countLength}. Удалите из массива ${result} элементов`);
+// }
+
+// const array = ["Tom", "bob, 3, 4"];
+// console.log(array)
+
+// let person = { //атрибуты
+//     name: "Tom",
+//     age: 18,
+//     hobbies: ["Кушать", "Спать", "Читать книги"],
+//     contacts: {
+//         phone: [88005553255, 89007298181],
+//         email: ["tom@gmail.com", "tom@example.com"],
+//         social: "www.github.com"
+//     }
+// }
+
+// console.log(`Имя - ${person["name"]}. Возраст - ${person["age"]}`);
+// console.log(person["hobbies"][2]);
+// console.log(person["hobbies"][2]);
+
+
+let college = [
+    { name: "Tom", age: 23, group: "ИС-2-2"},
+    { name: "Tom", age: 23, group: "ИС-2-2"},
+    { name: "Tom", age: 23, group: "ИС-2-2"},
+    { name: "Tom", age: 23, group: "ИС-2-2"}
+];
+
+let count = 2
+let studentAge = college[count]["age"];
+let studentName = college[count]["name"];
+
+if (college[0]["age" >= 18]) {
+    console.log(`Студент ${studentName} совершеннолетний. Ему ${studentAge} лет`)
 }
-else if (number.length < countLength) {
-    let result = countLength - number.length;
-    console.log(`Длина вашего массива: ${number.length}. Длину нужно увеличить до ${countLength}. Не хватает еще ${result} элементов`);
-}
-else if (number.length > countLength) {
-    result = number.length - countLength;
-    console.log(`Длина вашего массива: ${number.length}. Длину нужно уменьшить до ${countLength}. Удалите из массива ${result} элементов`);
+else if (college[0]["age" < 18]) {
+    console.log(`Студент ${studentName} не совершеннолетний. Ему ${studentAge} лет`)
 }
 
