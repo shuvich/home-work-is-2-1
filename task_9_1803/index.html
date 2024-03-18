@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Занятие 9</title>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">Расчёт стоимости строительных материалов.</h1>
+        <div class="form" id="form">
+            <label for="material-1">Цемент (кг/руб за 1): </label>
+            <input type="text" class="material" id="material-1-1">
+            <input type="text" class="material" id="material-1-2">
+            <br><br>
+            <label for="material-2">Кирпичи (шт/руб за 1): </label>
+            <input type="text" class="material" id="material-2-1">
+            <input type="text" class="material" id="material-2-2">
+            <br><br>
+            <label for="material-3">Доски (шт/руб за 1): </label>
+            <input type="text" class="material" id="material-3-1">
+            <input type="text" class="material" id="material-3-2">
+            <br><br>
+            <label for="material-4">Работник (чел/1 день): </label>
+            <input type="text" class="material" id="material-4-1">
+            <input type="text" class="material" id="material-4-2">
+            <br><br>
+            <button onclick="calculate()" id="saveBtn">Рассчитать</button>
+        </div>
+        <div id="result"></div>
+    </div>
+</body>
+</html>
